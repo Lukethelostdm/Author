@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiction</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+        <!--Navigation Info-->
+        <header>
+         <a href="Index.html"> <img class="nav-img" src="Images/logo/geoff-parkes-high-resolution-logo-transparent.png" alt="nav-logo"></a>
+          <div id="navigation-placeholder"></div>
+          <script>
+            $(function () {
+              $("#navigation-placeholder").load("navigation.html");
+            });
+          </script>
+        </header>
+
+        <div class="sub-title-text-page">
+          Crime Fiction Novels
+        </div>
+
+    <div class="grid-list">
+      <div class="book-grid">
+        <div class="left-column">
+          <h2 class="book-title-left">
+            When The Deep Dark Bush Swallows You Whole
+          </h2>
+          <div class="book-image">
+            <img src="Images/When the deep dark bush swallows you whole.jpg" alt="WTDDBSYW">
+          </div>
+          <div class="reviews">
+            <p><strong>Reviews:</strong></p>
+            <p>"REVIEW TEMPLATE" - <em>Journal</em></p>
+          </div>
+          <div class="reviews">
+            <p><strong>Reviews:</strong></p>
+            <p>"REVIEW TEMPLATE" - <em>Journal</em></p>
+          </div>
+          <div class="reviews">
+            <p><strong>Reviews:</strong></p>
+            <p>"REVIEW TEMPLATE" - <em>Journal</em></p>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="book-description">
+            <p class="section-title">
+              <strong>
+                Description
+              </strong>
+            </p>
+              <p>
+                A missing woman . . . a townful of suspects. The haunting debut crime novel that transports the reader back to the 1980s and a small rural town in New Zealand.
+
+                ‘She wasn’t the first and she wouldn’t be the last; swallowed into the deep, dark recesses of the King Country bush, never to be seen again.’
+                It’s January 1983. During his university summer break, Ryan Bradley returns to the remote town of Nashville in New Zealand’s rugged King Country.
+                
+                It’s a bittersweet trip: he’s working long, punishing hours as a woolpresser, he needs to sell his late mother’s house, and he’s increasingly feeling like an outcast in his childhood town.
+                
+                But mostly he’s haunted by memories of Sanna Sovernen, a Finnish backpacker and his secret lover, who worked with him in the shearing shed the summer before - then vanished without trace.
+                
+                Now Sanna’s sister Emilia has arrived from Finland, determined to get answers - and as he’s the workmate who reported Sanna missing, she wants Ryan’s help. Because Emilia knows her sister was not the first female traveller in the area to disappear . . .
+              </p>
+          </div>
+          <div class="info">
+            <p class="section-title"><strong>Genre:</strong>Fiction</p>
+            <p class="section-title"><strong>Released:</strong>4th Of February 2025</p>
+            <p class="section-title"><strong>Publisher:</strong>Penguin Random House</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
