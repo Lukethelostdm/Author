@@ -693,9 +693,10 @@ input[type="checkbox"]{
     transition-delay: 0.5s;
   }
   .card:hover {
-    width: 600px;
+    width: 375px;
     transition-delay: 0.5s;
   }
+
   .card .circle {
     position: absolute;
     top: 0;
@@ -727,37 +728,27 @@ input[type="checkbox"]{
     height: 100%;
     border-radius: 20px;
     background: #fd7015;
+    margin: 0 auto;
   }
   .card .circle .logo {
     position: relative;
     width: 150px;
     transition: 0.5s;
     transition-delay: 0.5s;
+    border: #000 solid;
   }
   .card:hover .circle .logo {
     transform: scale(0);
     transition-delay: 0s;
   }
-  .card .product_img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0) rotate(315deg);
-    height: 300px;
-    transition: 0.5s ease-in-out;
-  }
-  .card:hover .product_img {
-    transition-delay: 0.75s;
-    top: 55%;
-    left: 80%;
-    height: 320px;
-    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+
+  .product_img{
+    display: none;
   }
   .card .inside-content {
     position: absolute;
-    width: 60%;
-    left: 10%;
-    padding: 20px 20px 20px 20px;
+    width: 65%;
+    padding: 20px 20px;
     opacity: 0;
     transition: 0.5s;
     visibility: hidden;
@@ -766,8 +757,11 @@ input[type="checkbox"]{
     transition-delay: 0.75s;
     opacity: 1;
     visibility: visible;
-    left: 30px;
     margin-top: 15px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .card .inside-content h2 {
     color: #fff;
@@ -777,8 +771,9 @@ input[type="checkbox"]{
   }
   .card .inside-content p {
     color: #fff;
+    text-shadow: #000 .5px .5px;
     font-size: .8rem;
-    padding: 0 1.5rem;
+    padding: 0;
   }
   .card .inside-content a {
     position: relative;
@@ -790,6 +785,14 @@ input[type="checkbox"]{
     text-decoration: none;
     font-weight: 600;
     margin-top: 15px;
+  }
+  .inside-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 
   /*END of HomePage*/
@@ -877,6 +880,15 @@ input[type="checkbox"]{
 }
 /*Very Small Screens*/
 @media (min-width: 410px) {
+  .card .inside-content h2 {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1em;
+  }
+  .card .inside-content p {
+    font-size: .8rem;
+  }
+
   h2,
   .content h2 {
     font-size: 2rem;
@@ -996,6 +1008,88 @@ input[type="checkbox"]{
     font-size: 1rem;
   }
 
+  .card {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .card:hover {
+    width: 100%;
+    transition-delay: 0.5s;
+  }
+
+  .card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid;
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+  }
+
+  .card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover .product_img {
+    transition-delay: 0.75s;
+    top: 55%;
+    left: 80%;
+    height: 320px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  }
+ 
+  .card .inside-content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+  }
+  .card .inside-content p {
+    color: #fff;
+    text-shadow: #000 .5px .5px;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .card .inside-content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+
   /*FICTION AND NON FICTION PAGES*/
 
   .book-grid{
@@ -1072,6 +1166,129 @@ input[type="checkbox"]{
     padding: 2rem 0;
     line-height: 2rem;
   }
+  .card-wrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 4rem;
+  }
+
+  .card {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .card:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+  }
+  .card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid;
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+  }
+  .card:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    background: #fd7015;
+  }
+  .card .circle .logo {
+    position: relative;
+    width: 150px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  .card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+  }
+  .card .product_img {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover .product_img {
+    display: block;
+    transition-delay: 0.75s;
+    top: 55%;
+    left: 80%;
+    height: 320px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  }
+  .card .inside-content {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+  .card:hover .inside-content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 30px;
+    margin-top: 15px;
+  }
+  .card .inside-content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.3em;
+  }
+  .card .inside-content p {
+    color: #fff;
+    font-size: .8rem;
+    padding: 0 1.5rem;
+  }
+  .card .inside-content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
 
 }
 
@@ -1168,75 +1385,8 @@ input[type="checkbox"]{
     margin-bottom: 10px;
     font-size: 1.5rem;
   }
-  
-}
 
-/*Large*/
-@media (min-width: 1260px) {
-  .book-description{
-    padding: .5rem 3rem;
-    font-size: 1.15rem;
-    line-height: 1.2rem;
-    height: auto;
-    margin: 0;
-    box-shadow: #000 10px 10px 30px;
-  }
 
-  .sub-title-text-page{
-    width: 75%;
-    font-size: 1.5rem;
-  }
-
-  .author-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .author-bio{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-  }
-
-  .author-row-2{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    column-gap: 3rem;
-  }
-
-  .author-row-2 label{
-    display: none;
-  }
-
-  .author-row-2 img{
-    width: 500px;
-    height: 500px;
-    border-radius: 5%;
-  }
-  .small-hero{
-    display: flex;
-    flex-direction: column;
-    max-height: 500px;
-    padding: 1rem 1rem;
-  }
-
-  .small-hero small{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .small-hero img{
-    width: 100px;
-    height: auto;
-  }
 
   .card-wrap{
     display: flex;
@@ -1345,6 +1495,99 @@ input[type="checkbox"]{
   .card .inside-content p {
     color: #fff;
     font-size: .8rem;
+    padding: 0 1.5rem;
+  }
+  .card .inside-content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+}
+
+/*Large*/
+@media (min-width: 1260px) {
+  .book-description{
+    padding: .5rem 3rem;
+    font-size: 1.15rem;
+    line-height: 1.2rem;
+    height: auto;
+    margin: 0;
+    box-shadow: #000 10px 10px 30px;
+  }
+
+  .sub-title-text-page{
+    width: 75%;
+    font-size: 1.5rem;
+  }
+
+  .author-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .author-bio{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .author-row-2{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 3rem;
+  }
+
+  .author-row-2 label{
+    display: none;
+  }
+
+  .author-row-2 img{
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;
+  }
+  .small-hero{
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    padding: 1rem 1rem;
+  }
+
+  .small-hero small{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-hero img{
+    width: 100px;
+    height: auto;
+  }
+
+
+  .card .inside-content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+  }
+  .card .inside-content p {
+    color: #fff;
+    font-size: 1rem;
     padding: 0 1.5rem;
   }
   .card .inside-content a {
