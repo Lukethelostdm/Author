@@ -76,7 +76,7 @@ a {
   z-index: 2;
   right: 20px;
   top: 20px;
-  height: 50px;
+  height: 30px;
   width: 50px;
   text-align: center;
   line-height: 50px;
@@ -90,9 +90,9 @@ a {
 .menu-btn:after{
 	content: "";
 	position: absolute;
-	top: calc(-10%);
+	top: calc(50%);
 	left: 30%;
-	width: 40%;
+	width: 50%;
 	border-bottom: 2px solid #fff;
   box-shadow: #000 1px 1px 1px;
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -1479,7 +1479,7 @@ input[type="checkbox"]{
     transition-delay: 0.75s;
     top: 55%;
     left: 80%;
-    height: 320px;
+    height: 230px;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
   }
   .card .inside-content {
@@ -1507,7 +1507,7 @@ input[type="checkbox"]{
   .card .inside-content p {
     color: #fff;
     font-size: .8rem;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
   .card .inside-content a {
     position: relative;
@@ -1590,6 +1590,13 @@ input[type="checkbox"]{
     height: auto;
   }
 
+  .card:hover .product_img {
+    transition-delay: 0.75s;
+    top: 55%;
+    left: 80%;
+    height: 300px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+  }
 
   .card .inside-content h2 {
     color: #fff;
