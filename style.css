@@ -7,7 +7,13 @@
 html,
 body {
   width: 100%;
-  background-color: #555;
+  background: linear-gradient(50deg, #fd7015,
+  #bd6e6e);
+  /*rosybrown / */
+}
+
+header{
+  background-color: #000;
 }
 
 li {
@@ -55,17 +61,18 @@ a {
   position: fixed;
   top: 0;
   right: -100%;
-  height: 100%;
+  height: 500px;
   width: 100%;
-  background: #000;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   transition: all 0.6s ease-in-out;
-
 }
 #first-active:checked ~ .wrapper{
   right:0;
 }
 .menu-btn{
-  position: absolute;
+  position: fixed;
   z-index: 2;
   right: 20px;
   top: 20px;
@@ -83,7 +90,7 @@ a {
 .menu-btn:after{
 	content: "";
 	position: absolute;
-	top: calc(50% - 1px);
+	top: calc(-10%);
 	left: 30%;
 	width: 40%;
 	border-bottom: 2px solid #fff;
@@ -378,8 +385,8 @@ input[type="checkbox"]{
 
   .author-row-2 img{
     width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    height: auto;
+    border-radius: 5%;
     margin: 0 auto;
   }
 
@@ -642,6 +649,11 @@ input[type="checkbox"]{
     font-style: italic;
   }
 
+  .column-sub a:hover{
+    transition: .2s ease-in;
+    color: #fffff0;
+  }
+
   .social-links{
     display: flex;
     flex-direction: row;
@@ -655,7 +667,7 @@ input[type="checkbox"]{
 
   .fa-brands:hover{
     transition: .2s ease-in;
-    color: #0056b3;
+    color: #FFFFF0;
 
   }
   .dev{
@@ -955,7 +967,7 @@ input[type="checkbox"]{
   }
 
   .author-row-2 img{
-    height: 320px;
+    height: auto;
     width: 320px;
     text-align: center;
     align-items: center;
@@ -1343,7 +1355,7 @@ input[type="checkbox"]{
   }
 
   .author-row-2 img{
-    height: 500px;
+    height: auto;
     width: 500px;
   }
 
@@ -1582,13 +1594,13 @@ input[type="checkbox"]{
   .card .inside-content h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.3em;
   }
   .card .inside-content p {
     color: #fff;
-    font-size: 1rem;
-    padding: 0 1.5rem;
+    font-size: .9rem;
+    padding: 0 2rem;
   }
   .card .inside-content a {
     position: relative;
@@ -1605,4 +1617,42 @@ input[type="checkbox"]{
 }
 /*Very Large Screens*/
 @media (min-width: 1500px) {
+  .modal {
+    display: none;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background-color: #FFFFF0;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-wrap: wrap;
+    word-break: normal;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+  }
+  
+  .modal-content p {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
 }
