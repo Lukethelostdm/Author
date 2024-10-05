@@ -796,12 +796,11 @@ input[type="checkbox"]{
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
-    margin-top: 15px;
   }
   .inside-content{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    max-height: 95%;
     width: auto;
     margin: 0;
     padding: 0;
@@ -892,14 +891,6 @@ input[type="checkbox"]{
 }
 /*Very Small Screens*/
 @media (min-width: 410px) {
-  .card .inside-content h2 {
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1em;
-  }
-  .card .inside-content p {
-    font-size: .8rem;
-  }
 
   h2,
   .content h2 {
