@@ -1501,7 +1501,7 @@ input[type="checkbox"]{
   .card .inside-content h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1em;
   }
   .card .inside-content p {
@@ -1601,7 +1601,7 @@ input[type="checkbox"]{
   .card .inside-content h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1em;
   }
   .card .inside-content p {
