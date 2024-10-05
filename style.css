@@ -909,7 +909,7 @@ input[type="checkbox"]{
   }
 
   .card .inside-content h2 {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.3em;
