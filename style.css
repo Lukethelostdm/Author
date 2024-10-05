@@ -1081,7 +1081,7 @@ input[type="checkbox"]{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.5rem;
-    line-height: 1.3em;
+    line-height: 1em;
   }
   .card .inside-content p {
     color: #fff;
@@ -1282,7 +1282,7 @@ input[type="checkbox"]{
     color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
-    line-height: 1.3em;
+    line-height: 1em;
   }
   .card .inside-content p {
     color: #fff;
@@ -1502,7 +1502,7 @@ input[type="checkbox"]{
     color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
-    line-height: 1.3em;
+    line-height: 1em;
   }
   .card .inside-content p {
     color: #fff;
@@ -1602,7 +1602,7 @@ input[type="checkbox"]{
     color: #fff;
     text-transform: uppercase;
     font-size: 1.1rem;
-    line-height: 1.3em;
+    line-height: 1em;
   }
   .card .inside-content p {
     color: #fff;
