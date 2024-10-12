@@ -59,5 +59,3 @@ function displayEvents(events, containerId) {
     modal.style.display = 'none';
   });
 }
-
-
