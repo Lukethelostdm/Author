@@ -4,65 +4,10 @@ const scriptURL = "https://script.googleusercontent.com/macros/echo?user_content
 fetch(scriptURL)
 .then(response => response.json())
 .then(data => {
-  displayBooks(data.fiction, "fiction-container");
-  displayBooks(data.nonFiction, "non-fiction-container");
   displayEvents(data.events, "events-container");
 })
 .catch(error => console.error("Error fetching data", error));
 
-// Function to display books
-function displayBooks(books, containerId) {
-
-  const container = document.getElementById(containerId);
-  const modal = document.getElementById('bookDetailModal');
-  const closeModal = document.getElementById('closeModal');
-  const bookTitle = document.getElementById('bookTitle');
-  const bookGenre = document.getElementById('bookGenre');
-  const bookDescription = document.getElementById('bookDescription');
-  const bookReleaseDate = document.getElementById('bookReleaseDate');
-  const bookImage = document.getElementById('bookImage');
-  const bookLongDescription = document.getElementById('bookLongDescription'); // New field for long description
-
-  books.forEach(book => {
-    const bookDiv = document.createElement('div');
-    bookDiv.classList.add('book');
-    bookDiv.innerHTML = `
-      <h2>${book.Title}</h2>
-      <p><strong>Genre:</strong> ${book.Genre}</p>
-      <p>${book.Description}</p>
-      <p><strong>Release Date:</strong> ${book['Released']}</p>
-      <img src="${book['ImageURL']}" alt="${book.Title}" />
-      <button class="learnMore">Learn More</button>
-    `;
-    container.appendChild(bookDiv);
-
-    // Attach event listener to the button
-    const learnMoreButton = bookDiv.querySelector('.learnMore');
-    learnMoreButton.addEventListener('click', () => {
-      // Populate modal with book details
-      bookTitle.innerText = book.Title;
-      bookGenre.innerHTML = `<strong>Genre:</strong> ${book.Genre}`;
-      bookDescription.innerText = book.Description;
-      bookReleaseDate.innerHTML = `<strong>Release Date:</strong> ${book.Released}`;
-      bookImage.src = book.ImageURL;
-      bookImage.alt = book.Title;
-    
-      // If the book has a LongDescription, display it; otherwise, show a fallback message
-      if (book.LongDescription) {
-        bookLongDescription.innerText = book.LongDescription;
-      } else {
-        bookLongDescription.innerText = "No long description available."; 
-      }
-    
-      // Display the modal
-      modal.style.display = 'block';
-    });
-  })
-  // Close the modal when the close button is clicked
-  closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
-}
 
 //function for event display
 function displayEvents(events, containerId) {
@@ -114,4 +59,5 @@ function displayEvents(events, containerId) {
     modal.style.display = 'none';
   });
 }
+
 
