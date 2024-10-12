@@ -9,7 +9,6 @@ body {
   width: 100%;
   background: linear-gradient(50deg, #fd7015,
   #bd6e6e);
-  /*rosybrown / */
 }
 
 header{
@@ -806,7 +805,7 @@ input[type="checkbox"]{
 
   .card .inside-content p {
     color: #fff;
-    font-size: 12px;
+    font-size: .6rem;
     padding: 0;
     text-shadow: #000 1px 1px;
   }
