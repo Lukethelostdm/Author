@@ -805,7 +805,7 @@ input[type="checkbox"]{
 
   .card .inside-content p {
     color: #fff;
-    font-size: .7rem;
+    font-size: .73rem;
     padding: 0;
     text-shadow: #000 1px 1px;
   }
@@ -951,7 +951,7 @@ input[type="checkbox"]{
     line-height: 1em;
   }
   .card .inside-content p {
-    font-size: .7rem;
+    font-size: .73rem;
   }
   
   h2,
