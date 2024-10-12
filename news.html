@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Tab Title-->
+    <title>Geoff Parks || News and Events</title>
+    <!--TAB ICON / SEO ITEMS-->
+    <link
+      rel="ICON"
+      href="Images/logo/geoff-parkes-high-resolution-logo-black.png"
+      alt="tab-icon"
+    />
+    <!--Mobile home screen Save Icon-->
+    <link rel="apple-touch-icon" href="Geoff Parkes || Author" />
+    <!--Style Sheets-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script async src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <!--Navigation Info-->
+    <header id="header">
+      <div class="" id="navigation-placeholder"></div>
+      <script>
+        $(function () {
+          $("#navigation-placeholder").load("navigation.html");
+        });
+      </script>
+    </header>
+    
+    <!-- Hero for fiction / Image / Non-Fiction -->
+    <div class="hero">
+        <div class="hero-text-head">
+          <h1>Geoff Parkes</h1>
+          <p>
+            Crime Fiction Novelist <br />
+            and Rugby Writer
+          </p>
+        </div>
+      </div>
+  
+    <!-- All Releases information has been pulled from spreadsheet & can be updated. -->
+    <div id="events-container">
+      <h2 class="sub-title-text">News and Events</h2>
+    </div>
+    <div id="eventDetailModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span id="closeModalEvent" class="close">&times;</span>
+        <h2 id="eventTitle"></h2>
+        <p id="eventDate"></p>
+        <p id="eventDescription"></p>
+        <p id="eventLocation"></p>
+        <p id="eventLongDescription"></p>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+    
+  </body>
+</html>
