@@ -1311,7 +1311,6 @@ input[type="checkbox"]{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(#bd6e6e, #fd7015);
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
   }
