@@ -801,6 +801,7 @@ input[type="checkbox"]{
     text-align: center;
     align-items: center;
     justify-content: center;
+    height: 100%;
   }
 
   .card .inside-content p {
@@ -951,7 +952,7 @@ input[type="checkbox"]{
     line-height: 1em;
   }
   .card .inside-content p {
-    font-size: .85rem;
+    font-size: .8rem;
   }
   
   h2,
@@ -1390,7 +1391,7 @@ input[type="checkbox"]{
   }
   .card .inside-content p {
     color: #fff;
-    font-size: .8rem;
+    font-size: .9rem;
     padding: 0 1.5rem;
   }
   .card .inside-content a {
@@ -1613,8 +1614,9 @@ input[type="checkbox"]{
   }
   .card .inside-content p {
     color: #fff;
-    font-size: .6rem;
+    font-size: .87rem;
     padding: 0 1rem;
+    text-shadow: #000 1.5px 1.5px;
   }
   .card .inside-content a {
     position: relative;
