@@ -22,7 +22,7 @@ li {
 a {
   color: #000;
   text-decoration: none;
-  font-family: "cinzel", sans-serif;
+  font-family: "Playfair+Display", sans-serif;
 }
 
 
@@ -43,6 +43,8 @@ a {
 }
 
 iframe{
+  border: none;
+  border-radius: 20px;
   aspect-ratio: 2 / 1;
   width: 90% !important;
 }
@@ -59,7 +61,7 @@ iframe{
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  font-family: 'cinzel', sans-serif;
+  font-family: 'Playfair+Display', sans-serif;
   font-weight: 500;
   box-shadow: rgba(0, 0, 0, 0.3);
   margin: 0 auto;
@@ -271,7 +273,7 @@ input[type="checkbox"]{
     justify-items: center;
     margin: 0 auto;
     padding: 0;
-    font-family: 'cinzel', sans-serif;
+    font-family: 'Playfair+Display', sans-serif;
     font-weight: 400;
     color: #fffff0 ;
     text-shadow: #000 1px 1px;
@@ -288,7 +290,7 @@ input[type="checkbox"]{
     background-position: 50% 35%;
     background-repeat: no-repeat;
     background-size: 40px;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .hero-text-head p{
@@ -296,7 +298,7 @@ input[type="checkbox"]{
     text-align: center;
     margin: .5rem auto;
     padding: 1rem 1rem;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
     font-size: 1.2rem;
     color: #fffff0 ;
     text-shadow: #000 1px 1px;
@@ -319,7 +321,7 @@ input[type="checkbox"]{
   .sub-title-text{
     margin: .5rem 0;
     text-align: center;
-    font-family: 'cinzel', sans-serif;
+    font-family: 'Playfair+Display', sans-serif;
     padding: 1rem 0;
     color: #fff;
     text-shadow: #000 2px 2px;
@@ -331,7 +333,7 @@ input[type="checkbox"]{
     width: 90%;
     text-align: left;
     align-items: center;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
     font-weight: 700;
     color: #fff;
     text-shadow: #000 1px 1px;
@@ -429,8 +431,7 @@ input[type="checkbox"]{
     background-color: #fd7015;
     color: #fff;
     text-shadow: #000 1px 1px;
-    border: #000 solid 3px;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: background-color 0.3s ease;
   }
 
@@ -478,7 +479,7 @@ input[type="checkbox"]{
 .book h2 {
   font-size: 1.5;
   margin-bottom: 10px;
-  font-family: 'cinzel', sans-serif;
+  font-family: 'Playfair+Display', sans-serif;
 }
 
 .book p {
@@ -515,10 +516,7 @@ input[type="checkbox"]{
 .event {
   display: flex;
   flex-direction: column;
-  background-color: #fffff0;
-  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 80%;
   height: 100%;
@@ -543,29 +541,26 @@ input[type="checkbox"]{
 .event h2 {
   font-size: 1.5;
   margin-bottom: 10px;
-  font-family: 'cinzel', sans-serif;
+  font-family: 'Playfair+Display', sans-serif;
 }
 
 .event p {
   font-size: 1.2rem;
-  color: #555;
+  color: #fff;
+  text-shadow: #000 1px 1px;
   margin-bottom: 10px;
 }
 
 .event button {
-  background-color: #fd7015;
-  border: #000 solid 3px;
+  background:linear-gradient(#bd6e6e, #fd7015);
   text-shadow: #000 1px 1px;
   color: white;
+  border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 1rem 0;
-}
-
-.event button:hover {
-  background-color: #0056b3;
 }
 
 /* Modal styles */
@@ -580,7 +575,6 @@ input[type="checkbox"]{
   right: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -588,7 +582,7 @@ input[type="checkbox"]{
 }
 
 .modal-content {
-  background-color: #FFFFF0;
+  background: linear-gradient( -75deg, #bd6e6e, #fd7015);
   margin: 0 auto;
   padding: 20px;
   width: 80%;
@@ -606,7 +600,7 @@ input[type="checkbox"]{
 .modal-content h2 {
   margin-top: 0;
   font-size: 24px;
-  font-family: 'cinzel', sans-serif;
+  font-family: 'Playfair+Display', sans-serif;
 }
 
 .modal-content img {
@@ -656,7 +650,7 @@ input[type="checkbox"]{
   .column-title{
     font-size: 1rem;
     margin: .5rem 1rem;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .contact-list{
@@ -756,8 +750,7 @@ input[type="checkbox"]{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: #191919;
-    border: 8px solid;
+    background: linear-gradient(#bd6e6e, #fd7015);
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
   }
@@ -766,15 +759,16 @@ input[type="checkbox"]{
     width: 90%;
     height: 100%;
     border-radius: 20px;
-    background: #fd7015;
     margin: 0 auto;
+    background: none;
+    border: none;
   }
   .card .circle .logo {
     position: relative;
     width: 150px;
     transition: 0.5s;
     transition-delay: 0.5s;
-    border: #000 solid;
+    border-radius: 10px;
   }
   .card:hover .circle .logo {
     transform: scale(0);
@@ -813,7 +807,7 @@ input[type="checkbox"]{
   .card .inside-content a {
     position: relative;
     color: #fff;
-    background: #222222;
+    background: linear-gradient(#fd7015, #bd6e6e);
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
@@ -843,7 +837,7 @@ input[type="checkbox"]{
 
   .partners{
     margin: .5rem 0;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .partner-full{
@@ -858,7 +852,6 @@ input[type="checkbox"]{
   .partners-container img{
     max-width: 200px;
     height: 100px;
-    border: #000 solid;
     border-radius: 5px;
     background-color: #fff;
   }
@@ -871,10 +864,8 @@ input[type="checkbox"]{
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1000px;
-    background-color: #FFFFF0;
     padding: 1rem 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .book-grid{
@@ -898,7 +889,7 @@ input[type="checkbox"]{
     padding: 1rem 0;
     line-height: 1.6;
     color: #000;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .reviews{
@@ -912,15 +903,15 @@ input[type="checkbox"]{
   }
 
   .book-title-left{
-    font-family: 'cinzel', sans-serif;
+    font-family: 'Playfair+Display', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #000;
     margin-bottom: 5px;
   }
 
   .book-title-right{
-    font-family: 'cinzel', sans-serif;
+    font-family: 'Playfair+Display', sans-serif;
     display: none;
   }
 
@@ -940,7 +931,7 @@ input[type="checkbox"]{
   .info p{
     display: flex;
     flex-direction: column;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
 }
@@ -982,7 +973,7 @@ input[type="checkbox"]{
 
   .partners{
     margin: .5rem 0;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .partner-full{
@@ -997,9 +988,7 @@ input[type="checkbox"]{
   .partners-container img{
     max-width: 300px;
     height: 150px;
-    border: #000 solid;
     border-radius: 5px;
-    background-color: #fff;
   }
 }
 /*Small Screens*/
@@ -1031,9 +1020,7 @@ input[type="checkbox"]{
   .small-hero{
     margin: 3rem auto;
     font-size: 2rem;
-    border: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);    
-    border-radius: 20px;
+    text-shadow: #000 2px 2px;
     line-height: 2.1rem;
     text-align: center;
     align-items: center;
@@ -1141,8 +1128,7 @@ input[type="checkbox"]{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: #191919;
-    border: 8px solid;
+    background: linear-gradient(#bd6e6e, #fd7015);
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
   }
@@ -1176,7 +1162,7 @@ input[type="checkbox"]{
 
   .partners{
     margin: .5rem 0;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .partner-full{
@@ -1200,9 +1186,7 @@ input[type="checkbox"]{
   .partners-container img{
     max-width: 200px;
     height: 100px;
-    border: #000 solid;
     border-radius: 5px;
-    background-color: #fff;
   }
   /*FICTION AND NON FICTION PAGES*/
 
@@ -1259,7 +1243,7 @@ input[type="checkbox"]{
   .reviews{
     margin-top: .1rem;
     font-size: 0.95em;
-    color: #555;
+    color: #000;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1328,8 +1312,7 @@ input[type="checkbox"]{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: #191919;
-    border: 8px solid;
+    background: linear-gradient(#bd6e6e, #fd7015);
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
   }
@@ -1338,7 +1321,6 @@ input[type="checkbox"]{
     width: 90%;
     height: 100%;
     border-radius: 20px;
-    background: #fd7015;
   }
   .card .circle .logo {
     position: relative;
@@ -1397,7 +1379,6 @@ input[type="checkbox"]{
   .card .inside-content a {
     position: relative;
     color: #fff;
-    background: #222222;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
@@ -1435,7 +1416,7 @@ input[type="checkbox"]{
     margin: 0.5rem 0;
     text-decoration: underline;
     text-align: center;
-    font-family: 'cinzel', sans-serif;
+    font-family: 'Playfair+Display', sans-serif;
     padding: 0;
     width: 100%;
   }
@@ -1453,9 +1434,6 @@ input[type="checkbox"]{
     display: block;
     margin: 1rem auto;
     font-size: 1rem;
-    border: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);    
-    border-radius: 20px;
     line-height: 1.5rem;
     text-align: center;
     align-items: center;
@@ -1470,7 +1448,7 @@ input[type="checkbox"]{
   .modal {
     display: none;
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     z-index: 1000;
     left: 0;
@@ -1478,7 +1456,6 @@ input[type="checkbox"]{
     right: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
     text-align: center;
     align-items: center;
@@ -1486,9 +1463,10 @@ input[type="checkbox"]{
   }
   
   .modal-content {
-    background-color: #FFFFF0;
-    margin: 0 auto;
+    background: linear-gradient( -75deg, #bd6e6e, #fd7015);
+    margin: 0rem auto;
     padding: 20px;
+    height: 100%;
     width: 80%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -1497,9 +1475,9 @@ input[type="checkbox"]{
     word-break: normal;
     text-align: center;
     align-items: center;
-    justify-content: center;
-    overflow: scroll;
-  }
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    overflow-x: hidden;  }
   
   .modal-content p {
     margin-bottom: 10px;
@@ -1553,8 +1531,7 @@ input[type="checkbox"]{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: #191919;
-    border: 8px solid;
+    background: none;
     transition: 0.5s, background 0.5s;
     transition-delay: 0.75s, 1s;
   }
@@ -1563,7 +1540,6 @@ input[type="checkbox"]{
     width: 90%;
     height: 100%;
     border-radius: 20px;
-    background: #fd7015;
   }
   .card .circle .logo {
     position: relative;
@@ -1621,7 +1597,6 @@ input[type="checkbox"]{
   .card .inside-content a {
     position: relative;
     color: #fff;
-    background: #222222;
     padding: 10px 20px;
     border-radius: 10px;
     display: inline-block;
@@ -1643,7 +1618,7 @@ input[type="checkbox"]{
 
   .partners{
     margin: .5rem 0;
-    font-family: "cinzel", sans-serif;
+    font-family: "Playfair+Display", sans-serif;
   }
 
   .partner-full{
@@ -1674,7 +1649,6 @@ input[type="checkbox"]{
     line-height: 1.2rem;
     height: auto;
     margin: 0;
-    box-shadow: #000 10px 10px 30px;
   }
 
   .sub-title-text-page{
@@ -1751,8 +1725,8 @@ input[type="checkbox"]{
   .card .inside-content a {
     position: relative;
     color: #fff;
-    background: #222222;
-    padding: 10px 20px;
+    font-size: .8rem;
+    padding: 10px 10px;
     border-radius: 10px;
     display: inline-block;
     text-decoration: none;
@@ -1774,7 +1748,6 @@ input[type="checkbox"]{
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
     text-align: center;
     align-items: center;
@@ -1782,7 +1755,7 @@ input[type="checkbox"]{
   }
   
   .modal-content {
-    background-color: #FFFFF0;
+    background: linear-gradient( -75deg, #bd6e6e, #fd7015);
     margin: 0 auto;
     padding: 20px;
     width: 80%;
@@ -1793,7 +1766,7 @@ input[type="checkbox"]{
     word-break: normal;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     overflow: scroll;
   }
   
