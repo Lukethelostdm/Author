@@ -38,6 +38,7 @@ a {
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
+    padding: 0;
   }
 
   iframe {
@@ -45,6 +46,7 @@ a {
     border-radius: 20px;
     aspect-ratio: 2 / 1;
     width: 90% !important;
+    object-fit: cover;
   }
   .author-row-2 .small-hero {
     font-size: 1rem;
@@ -1148,6 +1150,7 @@ a {
   .section-title {
     display: flex;
     flex-direction: column;
+    line-height: 1.2;
   }
 
   .reviews {
